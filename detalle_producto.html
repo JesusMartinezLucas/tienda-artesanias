@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Artesanías - Detalle del Producto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detalle_producto.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Artesanías</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="iniciar_sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="product-detail-container">
+        <div class="product-detail">
+            <img id="main-photo" src="images/gatica1.jpeg" alt="Ejemplo de Producto">
+            <div class="product-info">
+                <h2 id="product-name">Nombre del Producto</h2>
+                <p id="product-price"><span>Precio:</span> $50.00</p>
+                <p id="product-size"><span>Peso:</span> 1.5 kg</p>
+                <p id="product-dimensions"><span>Dimensiones:</span> Alto: 20 cm, Ancho: 15 cm, Diámetro: 10 cm</p>
+                <p id="product-category" class="category">Categoría: Artesanías de Cobre</p>
+            </div>
+        </div>
+
+        <div class="detail-images">
+            <h3>Fotos del Producto</h3>
+            <div id="product-photos" class="image-carousel">
+                <img src="images/gatica2.jpeg" alt="Ejemplo de Producto">
+                <img src="images/gatica3.jpeg" alt="Ejemplo de Producto - 2">
+                <img src="images/gatica4.jpeg" alt="Ejemplo de Producto - 3">
+            </div>
+        </div>
+    </main>
+
+    <script src="detalle_producto.js"></script>
+
+</body>
+</html>

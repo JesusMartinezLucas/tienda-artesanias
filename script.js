@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
             products.forEach(product => {
                 const productCard = createProductCard(product);
                 productsContainer.appendChild(productCard);
+
+                productCard.addEventListener("click", productDetail);
+                productCard.product = product;
             });
         })
         .catch(error => console.error('Error al obtener productos:', error));
@@ -36,4 +39,10 @@ function createProductCard(product) {
     card.appendChild(content);
 
     return card;
+}
+
+function productDetail(event){
+    product = event.currentTarget.product;
+    window.localStorage.setItem("product", JSON.stringify(product));
+    window.location.href = `detalle_producto.html`;
 }
