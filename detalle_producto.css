@@ -46,7 +46,7 @@ main {
 }
 
 .product-detail img {
-    max-width: 300px; /* Ajusta el tamaño según sea necesario */
+    max-width: 200px; /* Ajusta el tamaño según sea necesario */
     height: auto;
     margin-right: 20px;
 }
